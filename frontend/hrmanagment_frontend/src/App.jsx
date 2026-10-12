@@ -5,8 +5,9 @@ import footer from './components/footer'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Home from './pages/home'
 import About from './pages/about'
-import contact from './pages/contact'
-import {Routes,Route} from 'react-router-dom'
+import Contact from './pages/contact'
+import Service from './pages/service'
+import { Routes, Route } from 'react-router-dom'
 
 
 
@@ -16,9 +17,10 @@ function App() {
     <div>
       <Header/>
          <Routes>
-            <Route> path="/" element={<home></home>}</Route>
-            <Route> path="/about" element={<about></about>}</Route>
-            <Route> path="/contact" element={<contact></contact>}</Route>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/service" element={<Service />} />
             
          </Routes>
     
