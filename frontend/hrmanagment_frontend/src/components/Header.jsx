@@ -5,7 +5,7 @@ import './Header.css'
 
 function Header(){
     return(
-        <div className="header">
+        <div className="header">  
 
             <Link to="/">home</Link>
             <Link to="/about">about</Link>
@@ -18,3 +18,12 @@ function Header(){
 }
 
 export default Header;
+
+
+
+
+
+
+
+
+
