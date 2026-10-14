@@ -1,7 +1,6 @@
-import { useState } from 'react'
 import './App.css'
 import Header from './components/Header'
-import footer from './components/footer'
+import Footer from './components/footer'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Home from './pages/home'
 import About from './pages/about'
@@ -14,17 +13,17 @@ import { Routes, Route } from 'react-router-dom'
 function App() {
 
   return(
-    <div>
+    <div className="app-shell">
       <Header/>
-         <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/service" element={<Service />} />
-            
-         </Routes>
-    
-    <footer/>
+      <main className="app-main">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/service" element={<Service />} />
+        </Routes>
+      </main>
+      <Footer/>
     </div>
   )
 }

@@ -1,8 +1,8 @@
-function footer(){
+import './Footer.css'
+
+function Footer(){
     return(
-        <div>
-            <footer>@ copyright 2026 - neha</footer>
-        </div>
+        <footer className="app-footer">© 2026 PeopleFirst. Supporting people at work.</footer>
     )
 }
-export default footer 
+export default Footer

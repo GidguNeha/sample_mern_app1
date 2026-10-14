@@ -1,24 +1,24 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import './Header.css'
 
 
 
 function Header(){
     return(
-        <div className="header">  
-
-            <Link to="/">home</Link>
-            <Link to="/about">about</Link>
-            <Link to="/contact">contact</Link>
-            <Link to="/service">service</Link>
-            
-        </div>
+        <header className="header">
+            <NavLink className="header-brand" to="/">People<span>First</span></NavLink>
+            <nav className="header-nav" aria-label="Main navigation">
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/about">About</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
+                <NavLink to="/service">Services</NavLink>
+            </nav>
+        </header>
     )
 
 }
 
 export default Header;
-
 
 
 

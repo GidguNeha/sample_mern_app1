@@ -1,0 +1,17 @@
+.app-shell {
+  display: flex;
+  min-height: 100svh;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+}
+
+.app-footer {
+  padding: 19px 24px;
+  border-top: 1px solid #ebe8f0;
+  color: #777181;
+  font-size: 12px;
+  text-align: center;
+}
