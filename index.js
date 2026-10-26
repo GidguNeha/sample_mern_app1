@@ -1,3 +1,9 @@
+let expresas= require("express");
+let cors = require("cors");
+let mongoose = require("mongoose");
+
+
+
 const express = require("express");
 const mongoose = require("mongoose");
 require("dotenv").config();
