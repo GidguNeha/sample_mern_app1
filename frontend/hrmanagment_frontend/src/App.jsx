@@ -8,7 +8,8 @@ import Contact from './pages/contact'
 import Service from './pages/service'
 import { Routes, Route } from 'react-router-dom'
 
-
+import register from './pages/register'
+import login from './pages/login'
 
 function App() {
 
